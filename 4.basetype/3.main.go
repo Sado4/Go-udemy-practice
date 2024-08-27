@@ -6,10 +6,10 @@ func main() {
 	var fl64 float64 = 2.4
 	fmt.Println(fl64)
 
-	ffl64 := 3.2
-	fmt.Printf("%T\n", ffl64)
+	ffl64 := 3.2 + fl64
+	fmt.Println(ffl64)
 
-	var fl32 float32 = 5.4
+	// var fl32 float32 = 5.4
 
 	fmt.Printf("%T\n", float32(ffl64))
 
@@ -25,6 +25,6 @@ func main() {
 
 	//var u8 uint = 255 byte
 
-	var c64 complex64 = -5 + 12i
+	// var c64 complex64 = -5 + 12i
 
 }
