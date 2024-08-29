@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+const IntVal = 1
+
 func main() {
 	const Pi = 3.14
 	//const Pi = 3
@@ -30,9 +32,12 @@ func main() {
 	fmt.Println(big - 1)
 
 	const (
-		c0 = iota // c0 == 0
+		c0 = 1    // c0 == 0
 		c1 = iota // c1 == 1
 		c2 = iota // c2 == 2
 	)
 
+	fmt.Println(IntVal)
+	fmt.Println(c0, c1, c2)
+	fmt.Println(A, B, C, D, E, F)
 }

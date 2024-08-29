@@ -5,10 +5,8 @@ import (
 )
 
 func sub() {
-	i := 0
 	for {
-		fmt.Println(i)
-		i++
+		fmt.Println("sub")
 	}
 }
 

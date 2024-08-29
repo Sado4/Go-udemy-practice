@@ -11,6 +11,11 @@ func TestDefer() {
 }
 
 func main() {
+	defer func() {
+		fmt.Println("Func A")
+		fmt.Println("Func B")
+		fmt.Println("Func C")
+	}()
 	TestDefer()
 
 	file, err := os.Create("test.txt")
@@ -21,9 +26,4 @@ func main() {
 
 	file.Write([]byte("Hello\n"))
 
-	defer func() {
-		fmt.Println("Func A")
-		fmt.Println("Func B")
-		fmt.Println("Func C")
-	}()
 }
