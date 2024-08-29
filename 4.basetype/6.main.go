@@ -14,6 +14,7 @@ func main() {
 
 	arr4 := [...]string{"C", "D"}
 	fmt.Println(arr4)
+	fmt.Printf("%T\n", arr4)
 
 	var arr5 [5]int = [5]int{1, 2, 3}
 	fmt.Println(arr5)
